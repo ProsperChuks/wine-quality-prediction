@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Prediction</title>
+</head>
+<body>
+    
+    <!-- Main Input For Receiving Output from our ML model -->
+    <form action="{{ url_for('predict')}}" method="post">
+        <input type="text" name="fixed acidity" placeholder="fixed acidity" required>
+        <input type="text" name="volatile acidity" placeholder="volatile acidity" required>
+        <input type="text" name="citric acid" placeholder="citric acid" required>
+        <input type="text" name="chlorides" placeholder="chlorides" required>
+        <input type="text" name="free sulfur dioxide" placeholder="free sulfur dioxide" req>
+        <input type="text" name="total sulfur dioxide" placeholder="total sulfur dioxide" required>
+        <input type="text" name="density" placeholder="density" required>
+        <input type="text" name="pH" placeholder="pH" required>
+        <input type="text" name="sulphates" placeholder="sulphates" required>
+        <input type="text" name="alcohol" placeholder="alcohol" required>
+
+        <button type="submit">Predict Quality of Wine</button>
+    </form>
+    <p>rating 0-10</p>
+    {{ prediction_text }}
+
+</body>
+</html>
