@@ -19,7 +19,7 @@ def predict():
 
     return render_template('index.html', prediction_text='Rating of the Wine is {}'.format(output))
 
-@app.route('/results',methods=['POST'])
+@app.route('/results', methods=['POST'])
 def results():
 
     data = request.get_json(force=True)
