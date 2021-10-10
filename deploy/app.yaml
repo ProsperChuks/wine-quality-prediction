@@ -1,8 +1,8 @@
-runtime: python37
+runtime: python39
 
 handlers:
-- url: /css
-  static_dir: css
+- url: /static
+  static_dir: static
 
 - url: /.*
   secure: always

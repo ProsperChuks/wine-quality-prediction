@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wine Prediction</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     
@@ -60,15 +60,14 @@
 
         <p>rating 0-10</p>
         <div class="kit">
-            <p class="alert alert-success alert-dismissible">
-                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <p class="alert alert-success">
                 {{ prediction_text }}
             </p>
         </div>
 
     </form>
     
-    <script src="static/JS/script.js"></script>
+    <script src="{{ url_for('static', filename='JS/script.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
