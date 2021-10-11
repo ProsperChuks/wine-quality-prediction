@@ -1,6 +1,6 @@
 # wine-quality-prediction
 
-[![Header](https://storage.googleapis.com/kaggle-competitions/kaggle/17717/logos/header.png "Header")]
+[![Header](https://www.thedrinksbusiness.com/content/uploads/2017/08/Prosecco-istock-640x427.jpg "Header")]
 
 Deployed on GCE - App Engine
 
