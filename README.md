@@ -1,6 +1,6 @@
 # wine-quality-prediction
 
-[![Header](https://drive.google.com/file/d/1iV1BoU1fF-s_DJfUTUFEfgZQFqyvLWah/view?usp=sharing "Header")]
+[![Header](https://storage.googleapis.com/kaggle-competitions/kaggle/17717/logos/header.png "Header")]
 
 Deployed on GCE - App Engine
 
